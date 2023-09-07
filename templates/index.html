@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RASA Speech-to-Text Chat Bot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.pcmag.com/imagery/articles/007OEmxN7mGIsAUtQFSIa2g-2.fit_lim.size_1600x900.v1675708680.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .chat-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .input-container input {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .input-container button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        #bot-response {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .bot-response-container {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .bot-message {
+            background-color: #f0f0f0;
+            padding: 8px;
+            border-radius: 5px;
+            margin: 5px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-box">
+        <h1>RASA Speech-to-Text Chat Bot</h1>
+        <form id="chat-form">
+            <div class="input-container">
+                <input type="text" name="message" id="message" required>
+                <button type="button" onclick="sendMessage()">Send</button>
+                <button type="button" onclick="startListening()">Listen</button>
+            </div>
+        </form>
+        <div id="bot-response"></div>
+    </div>
+
+    <script>
+        const botResponseDiv = document.getElementById('bot-response');
+        const messageInput = document.getElementById('message');
+        const chatForm = document.getElementById('chat-form');
+
+        chatForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            sendMessage();
+        });
+
+        function sendMessage() {
+            const sender = 'User';
+            const userInput = messageInput.value;
+            sendUserInput(userInput, sender);
+            messageInput.value = '';
+        }
+
+        function startListening() {
+            const recognition = new webkitSpeechRecognition();
+            recognition.continuous = false;
+            recognition.interimResults = false;
+
+            recognition.onresult = function(event) {
+                const userSpeech = event.results[0][0].transcript;
+                messageInput.value = userSpeech;
+                sendMessage();
+            };
+
+            recognition.start();
+        }
+
+        function sendUserInput(userInput, sender) {
+            fetch(`/get_response/${sender}/${userInput}`)
+                .then(response => response.text())
+                .then(botMessage => {
+                    displayBotResponse(botMessage);
+                    textToSpeech(botMessage);
+                });
+        }
+
+        function displayBotResponse(botMessage) {
+            const botResponseContainer = document.createElement('div');
+            botResponseContainer.className = 'bot-response-container';
+            const botMessageDiv = document.createElement('div');
+            botMessageDiv.className = 'bot-message';
+            botMessageDiv.innerText = botMessage;
+            botResponseContainer.appendChild(botMessageDiv);
+            botResponseDiv.appendChild(botResponseContainer);
+        }
+
+        function textToSpeech(text) {
+            const speechSynthesis = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(text);
+            speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+</html>

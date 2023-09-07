@@ -1,0 +1,41 @@
+version: "3.0"
+
+intents:
+  - conference_room_to_cafeteria
+  - cafeteria_to_conference_room
+  - conference_room_to_gym
+  - gym_to_conference_room
+  - gym_to_cafeteria
+  - cafeteria_to_gym
+
+responses:
+  utter_conference_room_to_cafeteria:
+    - text: "source:conference,destination:cafeteria"
+
+  utter_cafeteria_to_conference_room:
+    - text: "source:cafeteria,destination:conference"
+
+  utter_conference_room_to_gym:
+    - text: "source:conference,destination:gym"
+
+  utter_gym_to_conference_room:
+    - text: "source:gym,destination:conference"
+
+  utter_gym_to_cafeteria:
+    - text: "source:gym,destination:cafeteria"
+
+  utter_cafeteria_to_gym:
+    - text: "source:cafeteria,destination:gym"
+
+actions:
+  - utter_conference_room_to_cafeteria
+  - utter_cafeteria_to_conference_room
+  - utter_conference_room_to_gym
+  - utter_gym_to_conference_room
+  - utter_gym_to_cafeteria
+  - utter_cafeteria_to_gym
+
+
+
+
+

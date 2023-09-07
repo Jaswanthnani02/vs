@@ -1,0 +1,114 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+
+- intent: source
+  examples: |
+    - cafeteria
+    - Cafeteria
+    - CAFETERIA
+    - conference room
+    - Conference Room
+    - CONFERENCE ROOM
+    - parking area
+    - Parking Area
+    - PARKING AREA
+    - airport entrance
+    - Airport Entrance
+    - AIRPORT ENTRANCE
+    - restroom
+    - Restroom
+    - RESTROOM
+    - fifth floor
+
+- intent: conference_room_to_cafeteria
+  examples: |
+    - I want to go to the cafeteria from the conference room.
+    - How can I reach the cafeteria from the conference room?
+    - Give me directions to the cafeteria from the conference room.
+    - Route me to cafetaria from conference room.  
+    - What is the way to cafetaria from conference room. 
+
+- intent: conference_room_to_gym
+  examples: |
+    - I need to go to the gym from the conference room.
+    - How do I get to the gym from the conference room?
+    - Provide directions from the conference room to the gym.
+    - Route me to gym from conference room.
+    - What is the way to gym from conference room.   
+
+- intent: gym_to_cafeteria
+  examples: |
+    - I want to go to the cafeteria from the gym.
+    - Give me directions to the cafeteria from the gym.
+    - How can I reach the cafeteria from the gym?
+    - Route me to cafeteria from gym.
+    - What is the way to cafetaria from gym.
+
+- intent: fifth_floor_to_restroom
+  examples: |
+    - How do I get from the fifth floor to the restroom?
+    - What's the way to the restroom from the fifth floor?
+    - Give me directions to the restroom from the fifth floor.
+    - Route me to the restroom from the fifth floor.
+    - How far is the restroom from the fifth floor?
+    - Can you guide me to the restroom from the fifth floor?
+
+- intent: restroom_to_conference_room
+  examples: |
+    - How can I reach the conference room from the restroom?
+    - What's the way to the conference room from the restroom?
+    - Provide directions from the restroom to the conference room.
+    - Route me to the conference room from the restroom.
+    - How far is the conference room from the restroom?
+    - Can you guide me to the conference room from the restroom?
+
+- intent: parking_area_to_gym
+  examples: |
+    - I want to go to the gym from the parking area.
+    - How do I get to the gym from the parking area?
+    - Give me directions to the gym from the parking area.
+    - Route me to the gym from the parking area.
+    - How far is the gym from the parking area?
+    - Can you guide me to the gym from the parking area?
+
+- intent: cafeteria_to_fifth_floor
+  examples: |
+    - How can I get to the fifth floor from the cafeteria?
+    - What's the way to the fifth floor from the cafeteria?
+    - Provide directions from the cafeteria to the fifth floor.
+    - Route me to the fifth floor from the cafeteria.
+    - How far is the fifth floor from the cafeteria?
+    - Can you guide me to the fifth floor from the cafeteria?
+
+- intent: thanks
+  examples: |
+    - thank you
+    - thanks a lot
+    - thanks so much
+    - thank you very much
+    - thanks a bunch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

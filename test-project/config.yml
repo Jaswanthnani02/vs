@@ -1,0 +1,243 @@
+[10:02] Karthika Madineni
+
+version: "3.0"
+
+ 
+
+intents:
+
+  - ask_directions
+
+  - ask_directions1
+
+  - fifth_directions2
+
+  - restroom_directions3
+
+  - parkingarea_directions4
+
+  - current_location
+
+  - ask_help
+
+  - thanks
+
+  - ask_location_hours
+
+  - navigate_to_room
+
+  - find_accessible_route
+
+  - ask_location_description
+
+  - find_nearby_assistance
+
+  - ask_indoor_landmarks
+
+ 
+
+responses:
+
+  utter_provide_directions:
+
+    - text: "Sure! Here are the directions to your destination: Go straight and then turn left to reach the conference room."
+
+ 
+
+  utter_provide_directions1:
+
+    - text: "Absolutely. Begin by walking straight ahead and taking the first left turn. The cafeteria entrance will be on your right-hand side."
+
+ 
+
+  utter_provide_directions2:
+
+    - text: "To reach the fifth floor, take the elevator or stairs and go up five levels."
+
+ 
+
+  utter_provide_directions3:
+
+    - text: "Of course! Head straight ahead, then make a right turn at the intersection. You'll find the restroom on your left"
+
+ 
+
+  utter_provide_directions4:
+
+    - text: "Certainly! Walk to the end of the hallway, turn left, and continue walking until you reach the elevator. Take the elevator down to the parking area."
+
+ 
+
+ 
+
+  utter_current_location:
+
+    - text: "You are currently at cafeteria.
+
+             There are 4 destinations near by you
+
+             1.conference room
+
+             2.fifth floor
+
+             3.restroom
+
+             4.parking area
+
+             To which destination would you like to go?"
+
+ 
+
+  utter_offer_assistance:
+
+    - text: "Of course! I'm here to help. What do you need assistance with?"
+
+ 
+
+  utter_youre_welcome:
+
+    - text: "You're welcome! If you have any more questions, feel free to ask."
+
+ 
+
+  utter_location_hours:
+
+    - text: "The operating hours for cafeteria are 8 to 10."
+
+ 
+
+  utter_provide_navigation_instructions:
+
+    - text: "Sure! Follow this path to reach your desired location: ..."
+
+ 
+
+  utter_accessible_route_instructions:
+
+    - text: "Certainly! Here's an accessible route: ..."
+
+ 
+
+  utter_location_description:
+
+    - text: "This area has a central corridor with rooms on both sides."
+
+ 
+
+  utter_assistance_available:
+
+    - text: "I'm here to assist you. You can also ask nearby staff for help."
+
+ 
+
+  utter_indoor_landmarks:
+
+    - text: "On this floor, you can use the elevator and the stairway as landmarks."
+
+ 
+
+actions:
+
+  - utter_provide_directions
+
+  - utter_provide_directions1
+
+  - utter_provide_directions2
+
+  - utter_provide_directions3
+
+  - utter_provide_directions4
+
+  - utter_current_location
+
+  - utter_offer_assistance
+
+  - utter_youre_welcome
+
+  - utter_location_hours
+
+  - utter_provide_navigation_instructions
+
+  - utter_accessible_route_instructions
+
+  - utter_location_description
+
+  - utter_assistance_available
+
+  - utter_indoor_landmarks
+
+[10:05] Karthika Madineni
+
+version: "3.0"
+
+ 
+
+language: en
+
+ 
+
+pipeline:
+
+- name: WhitespaceTokenizer
+
+- name: RegexFeaturizer
+
+- name: LexicalSyntacticFeaturizer
+
+- name: CountVectorsFeaturizer
+
+- name: CountVectorsFeaturizer
+
+  analyzer: "char_wb"
+
+  min_ngram: 1
+
+  max_ngram: 4
+
+- name: DIETClassifier
+
+  epochs: 100
+
+- name: EntitySynonymMapper
+
+- name: ResponseSelector
+
+  epochs: 100
+
+- name: FallbackClassifier
+
+  threshold: 0.3
+
+  ambiguity_threshold: 0.1
+
+ 
+
+ 
+
+assistant_id: 20230814-111711-hoary-kite
+
+policies:
+
+# # No configuration for policies was provided. The following default policies were used to train your model.
+
+# # If you'd like to customize them, uncomment and adjust the policies.
+
+# # See https://rasa.com/docs/rasa/policies for more information.
+
+#   - name: MemoizationPolicy
+
+#   - name: RulePolicy
+
+#   - name: UnexpecTEDIntentPolicy
+
+#     max_history: 5
+
+#     epochs: 100
+
+#   - name: TEDPolicy
+
+#     max_history: 5
+
+#     epochs: 100
+
+#     constrain_similarities: true

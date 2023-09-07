@@ -1,0 +1,25 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvTI3viQ/PjkxLbUktSgzsbY2FgAydyAA": "utter_directions_gym_to_cafeteria",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvTI3viQ/PjkxLbUktSgzsZaAcaUlQGXxKZlFqWDR4ngMA4iwIhYACs1Gmw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhILEoOzMvPT6xKDUxviQ/Pr0yt7Y2FgCUMyFA": "utter_parking_area_to_gym_directions",
+    "eJyNjdEJgDAMRFfJAE7QVURC0CBBm0oaBSnublE/Bf27B+/u2nI0UBbjDal3SRqg3AGVIgd4YJbsrNVdM1t1RCt6gIVsEh2RjAk94bjH42NxdWfDlyIOYnyZ+edRdwKhT0pb": "action_listen",
+    "eJwtysEJgDAMQNFVMoATdBWREEqCAU0kjV5Kd7egt//gr30s0K/gB6mmuhXoX6DRyQV+HNqSbb5345iP2mQWqCScHEqYjqKSO8rhHmNsLz59I0U=": "utter_cafeteria_to_fifth_floor_directions",
+    "eJyVjUEKgDAMBL/SB/iCfkUkFE0xUBNJUy+lf7eoVxFvuzCzO9Y2uLorHhBmI2Hv6h2Aw4bePSVRNuTOlozaGeJezbs5RDRUCmACkaKtEJOIto/ZYt2CNxsWUrzw/OdyOgExO1Bq": "action_listen",
+    "eJwtysEJgDAMQNFVMoATdBWRUCTFQJuUJHop3d2C3v6Dv4+5wehGD+YzWCXB+AIlN0rwo7IHyXpvJ1sPy2IkKFziwlJVDUPRyMNU25zHCx7hIxw=": "utter_fifth_floor_to_restroom_directions",
+    "eJyVjUEKgDAMBL+SB/iCfkUkFE0xUBtJUy+lf7eoVxFvOzC7O9Y2QN2VDvSzsSQH9Q6Y/EYOHoicjVJ3SybtDqeO5iBwsBVDFFE0QaVsKrK1j9ViRoovZVxY6bLzj8PpBHJUT+8=": "action_listen",
+    "eJwtytEJgDAMRdFVOoATdBWREMorBGwiafSndHcL+ncP3H3MLY3L8RCXENOcxhek3JDTj1N6QNd7d/h6RBcjp2Ja4dACcrNGYVS4IuDCcx4v0Mkk5w==": "utter_directions_conference_room_to_cafeteria",
+    "eJyVjUEKgDAMBL/SB/iCfkUklLpCQBNJo5fi3y3qWfG2swy7fT26UFfDTik7q8RQ70CSFsTwwMzFIc3dCqw5LA09hqwywSAZZKoLuVJOExzG6fiY3rxpNLLhagu9jv28Hk4m/lVQ": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhJCMxL7u4tjYWAAX3G/c=": "utter_youre_welcome",
+    "eJyFjFEKgCAQBa/iATqBV4lYRB4k6RrrWoR494T6jf5mYJi59cm0XXCQ8xoyW9MeIHYJ1rwSQ1HwaGuBjCbwULVGV8db6T+TqgqhK1cBnYg+J3yvlht42Tjj": "action_listen",
+    "eJwtytEJgDAMRdFVMoATdBWRUMpTCjYpaRSkdHcL+ncP3LWPhXo13ByTZ5VA/QuWWBDox5mbQ+Z7Ndh8skx6oKSywyAJbKqFXfl4yhjbC/q1IpA=": "utter_directions_conference_room_to_gym",
+    "eJyNjdEJgDAMRFfpAE7QVUSC1FMKNpE0ClLc3aL+iv7dOx53bTkaVxbFRn2wKOxduQNxn+DdA3PMBq7umqHViVzRvAvCIxQcQCqSyISmPR0fo6sZlIaouNpMLzO/77oTaOROSw==": "action_listen",
+    "eJwtitEJgDAMBVfJAE7QVURCCU8o2ETS6E/p7lb07+64tY+F+um4OUsU00T9A9ZckeiXo7SAzvdq8PkUnRqJHC3crHIYi+kOhwr4TWNsD7EXJL4=": "utter_restroom_to_conference_room_directions",
+    "eJyVjUsKgDAQQ6/SA3iCXkVkkBqhoDMynbopvbv1s1bcJeEl6UvtXNkUO43BorB35RbE4wrvHrPEZODG5gRtTORmzTtFMhVZyYSC8AwFB9AZ1Y/lbAallwGaouJqpJ/HwwFepFTV": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhOL+0KDm1tjYWAAZqG/8=": "utter_source",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhOL+0KDm1loAhpSUlqUXxULU4zYgFAO4QNgU=": "action_listen"
+  }
+}

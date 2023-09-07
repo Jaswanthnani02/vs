@@ -1,0 +1,34 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"restroom_to_conference_room\"}}]": "utter_restroom_to_conference_room_directions",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"restroom_to_conference_room\"}}, {\"prev_action\": {\"action_name\": \"utter_restroom_to_conference_room_directions\"}, \"user\": {\"intent\": \"restroom_to_conference_room\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fifth_floor_to_restroom\"}}]": "utter_fifth_floor_to_restroom_directions",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fifth_floor_to_restroom\"}}, {\"prev_action\": {\"action_name\": \"utter_fifth_floor_to_restroom_directions\"}, \"user\": {\"intent\": \"fifth_floor_to_restroom\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cafeteria_to_fifth_floor\"}}]": "utter_cafeteria_to_fifth_floor_directions",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cafeteria_to_fifth_floor\"}}, {\"prev_action\": {\"action_name\": \"utter_cafeteria_to_fifth_floor_directions\"}, \"user\": {\"intent\": \"cafeteria_to_fifth_floor\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"gym_to_cafeteria\"}}]": "utter_directions_gym_to_cafeteria",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"gym_to_cafeteria\"}}, {\"prev_action\": {\"action_name\": \"utter_directions_gym_to_cafeteria\"}, \"user\": {\"intent\": \"gym_to_cafeteria\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"source\"}}]": "utter_source",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"source\"}}, {\"prev_action\": {\"action_name\": \"utter_source\"}, \"user\": {\"intent\": \"source\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thanks\"}}]": "utter_youre_welcome",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thanks\"}}, {\"prev_action\": {\"action_name\": \"utter_youre_welcome\"}, \"user\": {\"intent\": \"thanks\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"conference_room_to_cafeteria\"}}]": "utter_directions_conference_room_to_cafeteria",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"conference_room_to_cafeteria\"}}, {\"prev_action\": {\"action_name\": \"utter_directions_conference_room_to_cafeteria\"}, \"user\": {\"intent\": \"conference_room_to_cafeteria\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"parking_area_to_gym\"}}]": "utter_parking_area_to_gym_directions",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"parking_area_to_gym\"}}, {\"prev_action\": {\"action_name\": \"utter_parking_area_to_gym_directions\"}, \"user\": {\"intent\": \"parking_area_to_gym\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"conference_room_to_gym\"}}]": "utter_directions_conference_room_to_gym",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"conference_room_to_gym\"}}, {\"prev_action\": {\"action_name\": \"utter_directions_conference_room_to_gym\"}, \"user\": {\"intent\": \"conference_room_to_gym\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent back",
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start"
+    ]
+  }
+}

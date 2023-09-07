@@ -1,0 +1,52 @@
+version: "3.0"
+
+stories:
+- story: User asks for greetings
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: User asks for source
+  steps:
+    - intent: source
+    - action: utter_source
+
+- story: Conference room to cafeteria
+  steps:
+    - intent: conference_room_to_cafeteria
+    - action: utter_directions_conference_room_to_cafeteria
+
+- story: Conference room to gym
+  steps:
+    - intent: conference_room_to_gym
+    - action: utter_directions_conference_room_to_gym
+
+- story: Gym to cafeteria
+  steps:
+    - intent: gym_to_cafeteria
+    - action: utter_directions_gym_to_cafeteria
+
+- story: User asks for directions from fifth floor to restroom
+  steps:
+    - intent: fifth_floor_to_restroom
+    - action: utter_fifth_floor_to_restroom_directions
+
+- story: User asks for directions from restroom to conference room
+  steps:
+    - intent: restroom_to_conference_room
+    - action: utter_restroom_to_conference_room_directions
+
+- story: User asks for directions from parking area to gym
+  steps:
+    - intent: parking_area_to_gym
+    - action: utter_parking_area_to_gym_directions
+
+- story: User asks for directions from cafeteria to fifth floor
+  steps:
+    - intent: cafeteria_to_fifth_floor
+    - action: utter_cafeteria_to_fifth_floor_directions
+
+- story: User expresses gratitude
+  steps:
+    - intent: thanks
+    - action: utter_youre_welcome

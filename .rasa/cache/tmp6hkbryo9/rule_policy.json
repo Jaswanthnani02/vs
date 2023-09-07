@@ -1,0 +1,42 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_help\"}}]": "utter_offer_assistance",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_help\"}}, {\"prev_action\": {\"action_name\": \"utter_offer_assistance\"}, \"user\": {\"intent\": \"ask_help\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_directions\"}}]": "utter_provide_directions",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_directions\"}}, {\"prev_action\": {\"action_name\": \"utter_provide_directions\"}, \"user\": {\"intent\": \"ask_directions\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_accessible_route\"}}]": "utter_accessible_route_instructions",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_accessible_route\"}}, {\"prev_action\": {\"action_name\": \"utter_accessible_route_instructions\"}, \"user\": {\"intent\": \"find_accessible_route\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fifth_directions2\"}}]": "utter_provide_directions2",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fifth_directions2\"}}, {\"prev_action\": {\"action_name\": \"utter_provide_directions2\"}, \"user\": {\"intent\": \"fifth_directions2\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_location_hours\"}}]": "utter_location_hours",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_location_hours\"}}, {\"prev_action\": {\"action_name\": \"utter_location_hours\"}, \"user\": {\"intent\": \"ask_location_hours\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_directions1\"}}]": "utter_provide_directions1",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_directions1\"}}, {\"prev_action\": {\"action_name\": \"utter_provide_directions1\"}, \"user\": {\"intent\": \"ask_directions1\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"restroom_directions3\"}}]": "utter_provide_directions3",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"restroom_directions3\"}}, {\"prev_action\": {\"action_name\": \"utter_provide_directions3\"}, \"user\": {\"intent\": \"restroom_directions3\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"parkingarea_directions4\"}}]": "utter_provide_directions4",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"parkingarea_directions4\"}}, {\"prev_action\": {\"action_name\": \"utter_provide_directions4\"}, \"user\": {\"intent\": \"parkingarea_directions4\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_nearby_assistance\"}}]": "utter_assistance_available",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_nearby_assistance\"}}, {\"prev_action\": {\"action_name\": \"utter_assistance_available\"}, \"user\": {\"intent\": \"find_nearby_assistance\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_location_description\"}}]": "utter_location_description",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_location_description\"}}, {\"prev_action\": {\"action_name\": \"utter_location_description\"}, \"user\": {\"intent\": \"ask_location_description\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"navigate_to_room\"}}]": "utter_provide_navigation_instructions",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"navigate_to_room\"}}, {\"prev_action\": {\"action_name\": \"utter_provide_navigation_instructions\"}, \"user\": {\"intent\": \"navigate_to_room\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"current_location\"}}]": "utter_current_location",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"current_location\"}}, {\"prev_action\": {\"action_name\": \"utter_current_location\"}, \"user\": {\"intent\": \"current_location\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thanks\"}}]": "utter_youre_welcome",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"thanks\"}}, {\"prev_action\": {\"action_name\": \"utter_youre_welcome\"}, \"user\": {\"intent\": \"thanks\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_indoor_landmarks\"}}]": "utter_indoor_landmarks",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_indoor_landmarks\"}}, {\"prev_action\": {\"action_name\": \"utter_indoor_landmarks\"}, \"user\": {\"intent\": \"ask_indoor_landmarks\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "predicting default action with intent back",
+      "predicting default action with intent restart"
+    ]
+  }
+}

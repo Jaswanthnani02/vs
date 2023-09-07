@@ -1,0 +1,32 @@
+version: "3.0"
+
+rules:
+- rule: Respond with conference room to cafeteria
+  steps:
+  - intent: conference_room_to_cafeteria
+  - action: utter_conference_room_to_cafeteria
+
+- rule: Respond with cafeteria to conference room
+  steps:
+  - intent: cafeteria_to_conference_room
+  - action: utter_cafeteria_to_conference_room
+
+- rule: Respond with conference room to gym
+  steps:
+  - intent: conference_room_to_gym
+  - action: utter_conference_room_to_gym
+
+- rule: Respond with gym to conference room
+  steps:
+  - intent: gym_to_conference_room
+  - action: utter_gym_to_conference_room
+
+- rule: Respond with gym to cafeteria
+  steps:
+  - intent: gym_to_cafeteria
+  - action: utter_gym_to_cafeteria
+
+- rule: Respond with cafeteria to gym
+  steps:
+  - intent: cafeteria_to_gym
+  - action: utter_cafeteria_to_gym
