@@ -31,7 +31,7 @@ services:
     volumes:
     - ./actions:/app/actions
     - ./utils:/app/utils
-    command: ["rasa", "run", "actions"]
+    command: ["rasa", "run", "actions","--enable-api"]
     ports:
     - '5055:5055'
     networks:
